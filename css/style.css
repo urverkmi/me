@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
 :root {
     --primary-color: #2a2a2a;
     --accent-color: #4a90e2;
@@ -5,12 +8,13 @@
     --link-hover-color: #63f463;
     --background-color: #ffffff;
     --text-color: #333333;
-    --heading-font: 'Helvetica Neue', sans-serif;
-    --body-font: 'Helvetica Neue', sans-serif;
+    --heading-font: 'Roboto', Arial, sans-serif;
+    --body-font: 'Roboto', Arial, sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-feature-settings: "liga" 1;
+    font-weight: 300; /* Regular weight */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -149,7 +153,7 @@ a:hover {
 
 p {
     margin: 0;
-    font-size: 8;
+    font-size: 6;
 }
 
 p.custom-space {
