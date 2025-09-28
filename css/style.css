@@ -21,6 +21,11 @@ body {
     color: #333;
     font-family: var(--body-font);
     color: var(--text-color);
+    background-image: url('../assets/pngs/title.png');
+    background-size: cover; /* Scales image to cover entire area */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Image stays fixed when scrolling */
 }
 
 header {
