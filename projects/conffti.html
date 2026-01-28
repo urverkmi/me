@@ -3,23 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Chang</title>
+    <title>Michelle Chang - ConFFTi</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<project-body>
     <header>
         <a href="../index.html">← Back</a>
     </header>
 
-    <main class="container">
-        <div class="pdf-container">
-            <object
-                data="../assets/projects/conffti.pdf"
-                type="application/pdf"
-                class="pdf-viewer">
-                <p>Unable to display PDF. <a href="../assets/projects/conffti.pdf">Download Instead</a></p>
-            </object>
+   
+
+    <!-- <div class="slideshow-container">
+        <div class="slide active">
+            <div class="slide-title">Project Overview</div>
+            <div class="image-container"><img src="../assets/images/conffti_intro.png" alt="Project cover image" style="width: 100%; height: 100%; object-fit: contain; border-radius: 4px;"></div>            
+            <div class="slide-text">
+                conFFTi is a digital musical synthesizer implemented on a Field Programmable Gate Array (FPGA). The system accepts real-time inputs from a MIDI keyboard, generates digital signals in the FPGA, and outputs audible sound through a digital analog converter (DAC). 
+            </div>
         </div>
-    </main>
-</body>
+
+        <div class="slide">
+            <div class="slide-title">Verifications & User testing</div>
+            <div class="image-container"><img src="../assets/images/conffti_ver.png" alt="Project cover image" style="width: 100%; height: 100%; object-fit: contain; border-radius: 4px;"></div>            
+            <div class="slide-text">
+                We achieved our technical precision goals for latency, signal distortion, customizability, and output audio quality. We experienced some pitch deviation for notes above C6. 
+                <br>During user testing, we received some negative feedback for the difficulty of navigating the system with all its loose cables.            
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">USER INSIGHTS</div>
+            <div class="image-container">Journey maps / research data</div>
+            <div class="slide-text">
+                We discovered that users were struggling with complex workflows and desired a more intuitive experience. These insights became the foundation for our design approach.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">EARLY PROTOTYPES</div>
+            <div class="image-container">Sketches / wireframes</div>
+            <div class="slide-text">
+                Based on research findings, we developed multiple iterations of prototypes. We started with low-fidelity sketches to explore different concepts quickly.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">REFINED PROTOTYPES</div>
+            <div class="image-container">Mid-fidelity prototype</div>
+            <div class="slide-text">
+                User testing revealed valuable insights that guided our refinements. We iterated on the design based on feedback, focusing on improving usability and visual hierarchy.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">HIGH-FIDELITY PROTOTYPE</div>
+            <div class="image-container">Final prototype</div>
+            <div class="slide-text">
+                The high-fidelity prototype brought together all our learnings. This version was tested extensively to ensure it met user needs and business goals.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">FINAL DESIGN</div>
+            <div class="image-container">Final design - main view</div>
+            <div class="slide-text">
+                The final design successfully addresses the user needs we identified during research. The interface is clean, intuitive, and focuses on core user tasks.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">DESIGN DETAILS</div>
+            <div class="image-container">Detail views / components</div>
+            <div class="slide-text">
+                Careful attention to detail ensures a cohesive experience. Every element serves a purpose and contributes to the overall usability of the product.
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slide-title">RESULTS & IMPACT</div>
+            <div class="image-container">Metrics / before & after</div>
+            <div class="slide-text">
+                The project resulted in improved user satisfaction and measurable increases in task completion rates. The minimalist approach allows users to focus on their goals without distraction.
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button" onclick="changeSlide(-1)" id="prevBtn">Previous</button>
+            <div class="dots" id="dotsContainer"></div>
+            <div class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">9</span></div>
+            <button class="nav-button" onclick="changeSlide(1)" id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const dotsContainer = document.getElementById('dotsContainer');
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            if (i === 0) dot.classList.add('active');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            
+            document.getElementById('currentSlide').textContent = index + 1;
+            
+            document.getElementById('prevBtn').disabled = index === 0;
+            document.getElementById('nextBtn').disabled = index === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            if (currentSlideIndex < 0) currentSlideIndex = 0;
+            if (currentSlideIndex >= totalSlides) currentSlideIndex = totalSlides - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        function goToSlide(index) {
+            currentSlideIndex = index;
+            showSlide(currentSlideIndex);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        });
+
+        // Initialize
+        showSlide(0);
+    </script> -->
+
+    <!-- Footer -->
+    <footer>
+        <a href="../index.html">← Back</a>
+        <p class="copyright">© 2026 Michelle Chang. All rights reserved.</p>
+    </footer>
+    
+</project-body>
 </html>

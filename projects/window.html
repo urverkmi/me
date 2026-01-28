@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Chang</title>
+    <title>Michelle Chang - Window</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -11,15 +11,96 @@
         <a href="../index.html">← Back</a>
     </header>
 
-    <div class="container">
-        <div class="pdf-container">
-            <object
-                data="../assets/projects/window.pdf"
-                type="application/pdf"
-                class="pdf-viewer">
-                <p>Unable to display PDF. <a href="../assets/projects/window.pdf">Download Instead</a></p>
-            </object>
-        </div>
+    <!-- Project Title & Overview -->
+    <div class="project-intro">
+        <h2>Window</h2>
+        <span class="project-tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">Max/MSP</span>
+        </span>
+        <p>A digital window designed to be a seamless workspace companion. The project leverages Max/MSP for its real-time audio processing capabilities to create responsive visual elements.</p>
     </div>
+
+    <!-- Main Content -->
+    <div class="content-section">
+
+        <div class="content-block" style="margin-bottom: 0px;">
+            <div class="content-grid right-heavy">
+                <div class="text-content">
+
+                </div>
+                <div class="media-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/window-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block" style="margin-bottom: 0px; margin-top: 0px;">
+            <div class="content-grid right-heavy">
+                <div class="text-content">
+                    <h3>Background</h3>
+                    <p>Office workers often face an inherent disconnect between indoor environments and the world outside of their office.</p>
+                    <p>Window is a dynamic digital installation that restores this link through real-time audio-visual feedback.</p>
+                </div>
+                <div class="media-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/window-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block" style="margin-top: 0px;">
+            <div class="content-grid right-heavy">
+                <div class="text-content">
+                </div>
+                <div class="media-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/window-3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block" style="margin-top: 20vh">
+            <div class="content-grid left-heavy">
+                <div class="media-container">
+                    <img src="../assets/images/window-works.png" alt="Description">
+                </div>
+                <div class="text-content">
+                    <h3>How it works</h3>
+                    <p>Max/MSP is a visual programming language for creating interactive multimedia applications.</p>
+                    <p>The Max patch takes the time-domain audio input and applies <b>fast fourier transform (FFT)</b> to obtain the frequency-domain data, which determines the size of the rhythmic visuals. </p>
+                    <p>Behind the scenes, there is a python script that calls the OpenWeatherMap API and sends the weather data to the patch, which parses the message and toggles the corresponding visual elements.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Width Media with Caption -->
+        <div class="content-block">
+            <div class="media-full" style="max-width: 100vw; margin: 0 auto;">
+                <div class="media-container">
+                    <img src="../assets/images/window-sample2.png" alt="Description">
+                </div>
+            </div>
+            <div class="text-content">
+                <br>
+                    <p>The window demonstrates how a simple integration of natural elements can enhance our indoor work environments.</p>
+                </div>
+            <!-- <div class="text-content">
+                <p style="text-align: center; color: #888; font-size: 0.9rem;">Image caption or description</p>
+            </div> -->
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="../index.html">← Back</a>
+        <p class="copyright">© 2026 Michelle Chang. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

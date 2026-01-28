@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michelle Chang</title>
+    <title>Michelle Chang - Cairn</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -11,15 +11,87 @@
         <a href="../index.html">← Back</a>
     </header>
 
-    <main class="container">
-        <div class="pdf-container">
-            <object
-                data="../assets/projects/cairn.pdf"
-                type="application/pdf"
-                class="pdf-viewer">
-                <p>Unable to display PDF. <a href="../assets/projects/cairn.pdf">Download Instead</a></p>
-            </object>
+    
+
+     <!-- Project Title & Overview -->
+    <div class="project-intro">
+        <h2>Cairn</h2>
+        <span class="project-tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">Research</span>
+                <span class="tag">Web Dev</span>
+        </span>
+        <p>This project examines our fundamental relationship with AI by asking the following questions: </p>
+        <p><i><b>When we step away from using AI for problem-solving only, what meaningful insights might emerge? </b></i></p>
+        <p><i><b>Can our relationship with AI evolve beyond the request-response paradigm? </b></i></p>
+    </div>
+
+    <div class="content-section" style="margin-bottom: 0px;">
+        <div class="content-block" style="margin-bottom: 0px;">
+            <div class="content-grid right-heavy" style="margin-bottom: 0px;">
+                <div class="text-content">
+                    <p>Cairn is designed for exploring gesture communication with mouse clicking, which is a fundamental gesture in our digital behavior.</p>
+                </div>
+                <div class="media-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/cairn.mp4" type="video/mp4">
+                    </video>
+                    <p><a href="https://urverkmi.github.io/cairn/" target="_blank" class="friend-link">Link to demo</a></p>
+                </div>
+            </div>
         </div>
-    </main>
+    </div>
+
+    <div class="content-section" style="margin-top: 0px; margin-bottom: 0px;">
+        <div class="content-block" style="margin-top: 0px;">
+            <div class="content-grid right-heavy" style="margin-top: 0px; margin-bottom: 0px;">
+                <div class="text-content">
+                    <h3>How it works</h3>
+                    <p>The webpage gathers and sends interaction patterns to the <b>Anthropic API</b> for interpreting the emotional undertones.</p>
+                    <p>e.g. Rapid, clustered clicks may suggest anxiety, while measured, dispersed clicks may suggest a calmer mood.</p>
+                </div>
+                <div class="media-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="../assets/images/promenade.mp4" type="video/mp4">
+                    </video>
+                    <p><a href="https://urverkmi.github.io/promenade/" target="_blank" class="friend-link">Link to demo</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-section" style="margin-top: 0px; max-width: 80vw;">
+        <div class="content-block" style="margin-top: 0px;">
+            <div class="content-grid left-heavy" style="margin-top: 0px; margin-bottom: 0px;">
+                <div class="media-container">
+                        <img src="../assets/images/cairn-overview.svg" alt="Description">
+                    </div>
+                <div class="text-content">
+                    <h3>Data processing pipeline</h3>
+                    The interaction data are encoded with 2 dimensions (temporal and spatial complexity) and defined into 2 groups (clicks and drags). I leveraged cacheing to ensure efficient API usage.
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="content-section" style="margin-top: 0px; max-width: 80vw;">
+        <div class="content-block" style="margin-top: 0px;">
+            <div class="media-container">
+                    <img src="../assets/images/cairn-guide.svg" alt="Description">
+                </div>
+            <br>
+            <p>To experience new ways of interactions, I wanted to translate AI responses into other formats beyond plain text.</p>
+            <p> <i>Promenade</i> is a demo for the graphic pipeline. The back-end parses the AI response into interpretable visualization cues.</p>
+            <br>
+            <p>Similarly, I am in the process of implementing the choreo and musical pipelines, in order to create experiences that would move a 3D model humanoid or compose a piece of music. Stay tuned for more demos to come!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="../index.html">← Back</a>
+        <p class="copyright">© 2026 Michelle Chang. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
